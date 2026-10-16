@@ -1,0 +1,82 @@
+ <!DOCTYPE html> 
+<html lang="ht"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Music Platform</title> 
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+ <div class="bwat"> 
+        <h3>Enskripsyon</h3> 
+        <p id="mesaj"></p>
+
+        <form id="fomEnskripsyon" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="9fe6f061-b984-4ca7-8c67-b91bad3a2bec">
+        <input type="hidden" name="subject" value="Nouvo Enskripsyon sou sit lan">
+
+
+        <div id="premye"> 
+            <h4>etap 1</h4> 
+            <input type="text" id="siyati" name="siyati" placeholder="siyati"> 
+            <input type="text" id="non" name="non" placeholder="non"> 
+            <input type="email" id="imel" name="imel" placeholder="imel">  
+
+            <div class="bouton-yo"> 
+                <span></span> 
+                <button type="button" onclick="aleDezyem()">Avanse</button> 
+            </div> 
+
+        </div> 
+
+        <div id="dezyem"> 
+            <h4>etap 2</h4> 
+
+            <input type="text" id="itilizate" name="itilizate" placeholder="non itilizate"> 
+            <input type="password" id="modpas" name="modpas" placeholder="Modpas"> 
+            <input type="password" id="konfimasyon" name="konfimasyon" placeholder="konfime modpas"> 
+
+            <div class="bouton-yo"> 
+                <button type="button" onclick="tounenPremye()">Retounen</button> 
+                <button type="button" onclick="aleTwayem()">Avanse</button> 
+            </div> 
+        </div> 
+
+        <div id="twazyem"> 
+            <h4>etap 3</h4> 
+
+            <input type="text" id="telefon" name="telefon" placeholder="Telefon"> 
+            <input type="text" id="vil" name="vil" placeholder="Vil"> 
+            <input type="text" id="peyi" name="peyi" placeholder="Peyi">   
+
+            <div class="bouton-yo"> 
+                <button type="button" onclick="tounenDezyem()">Retounen</button>  
+                <button type="button" onclick="enskri()">Enskri</button> 
+            
+            </div> 
+        </div> 
+        </form>
+        <p id="reyisi"></p> 
+    </div>
+
+ 
+
+
+    <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+
+ <!-- PureCounter -->
+    <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs@1.5.0/dist/purecounter_vanilla.min.js"></script> 
+
+    <script> 
+        new PureCounter(); 
+    </script>
+
+      <button id="whatsapp" title="Contactez-nous sur whatsapp">
+    <i class="fa-brands fa-whatsapp"></i>
+       </button>
+
+      <script src="script.js"></script>
+</body>
+</html>  

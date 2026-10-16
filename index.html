@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ht">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power Music Platform</title>
+    <link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <!-- Pati Logo a -->
+            <div class="logo">
+                <img src="638.jpg" alt="Logo Platfòm nan">
+                <span class="logo-name">PowerMusic</span>
+            </div>
+
+            <!-- Meni Navigasyon -->
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Atis</a></li>
+                <li><a href="Album.html">Album</a></li>
+                <li><a href="Playlist.html">Playlist</a></li>
+            </ul>
+        <!--pati bouton rechech la-->
+            <div class="search-box">
+    <input type="text" id="searchInput" placeholder="Chache yon mizik...">
+  <button id="searchBtn">
+    <img src="icons8-google-web-recherche-50.png" alt="Rechercher" width="20" height="20">
+</button>
+</div>
+
+                <!-- Bouton Dark Mode -->
+                <button id="theme-btn" class="btn-control">🌙</button>
+
+                <!-- Bouton Lang -->
+                <div class="menu">
+                    <button id="langToggle" class="btn-control">Lang</button>
+                    <div class="lis">
+                        <div onclick="chwaziLang('fr')">Français</div>
+                        <div onclick="chwaziLang('en')">English</div>
+                        <div onclick="chwaziLang('pt')">Português</div>
+                        <div onclick="chwaziLang('es')">Español</div>
+                        <div onclick="chwaziLang('ht')">Kreyòl</div>
+                    </div>
+                </div>
+
+                <!-- Bouton Meni Hamburger -->
+                <div class="menu-icon" id="menuIcon">
+                    <img src="icons8-menu-50.png" alt="Meni ikon">
+                </div>
+            </div>
+        </nav>
+    </header>
+    <br>
+
+<div class="kontene">
+
+<h1 class="tit" id="galri-titre">Galri Power Music</h1>
+
+<div class="galri">
+    <img id="imaj" src="images (2).jfif">
+</div>
+
+<div class="pwen-yo">
+    <span class="pwen aktif" onclick="montreImaj(0)"></span>
+    <span class="pwen" onclick="montreImaj(1)"></span> 
+    <span class="pwen" onclick="montreImaj(2)"></span> 
+    <span class="pwen" onclick="montreImaj(3)"></span> 
+    <span class="pwen" onclick="montreImaj(4)"></span>  
+</div>
+
+<div class="bouton-yo">
+    <button class="retounen" id="retounen-btn" onclick="retounenImaj()">
+        &#11013; Retounen
+    </button>
+
+    <button class="suivan" id="suivan-btn" onclick="suivanImaj()">
+        Suivan &#10145;
+    </button>
+</div>
+
+</div><br>
+
+
+ <main>
+<section class="hero">
+<div class="content">
+
+    <h1>
+        <span id="hero-tit">Nou se:</span>
+        <span class="auto-type"></span>
+    </h1>
+
+    <p>
+        <h2 id="hero-soustit">ou pi bon kote a</h2>
+    </p>
+
+    <a href="Album.html" class="btn" id="hero-btn">koumanse</a>
+
+</div>
+
+
+</section>
+
+        <section class="byenvini-section">
+            <h1 id="tit">Byenveni sou PowerMusic</h1>
+            <p id="soustit">Pi bon platfòm pou koute mizik ou renmen yo.</p>
+        </section>
+
+        <section class="albums-section">
+            <div class="cards">
+
+                <div class="card">
+                    <img src="stocksnap-people-2572167_1920.jpg" alt="1989 Album Cover">
+                   <h3><p>1989</p></h3> 
+                      <a href="1989.html" class="analyse-btn">
+                         juna Krok
+                      </a>
+
+                </div>
+
+                <div class="card">
+                    <img src="image album.jpg" alt="Amour et folie Album Cover">
+                     <h3><p>Gospel</p></h3> 
+                      <a href="1989.html" class="analyse-btn">
+                         mark Jill
+                      </a>
+                </div>
+
+                <div class="card">
+                    <img src="image artiste.jpg" alt="Hit mon coeur Album Cover">
+                      <h3><p>Hit mizik</p></h3> 
+                      <a href="1989.html" class="analyse-btn">
+                         Anne koly
+                      </a>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="playlist">
+            <div class="cards">
+
+                <div class="card">
+                    <img src="images (3).jfif" alt="Top Hits Playlist">
+                  <h3><p>Bonne Music</p></h3> 
+                      <a href="songs.html" class="analyse-btn">
+                         35 songs
+                      </a> 
+
+                </div>
+
+                <div class="card">
+                    <img src="images (4).jfif" alt="Relax Music Playlist">
+                    <h3><p>Relax Music</p></h3> 
+                      <a href="Album.html" class="analyse-btn">
+                         35 songs
+                      </a> 
+
+                </div>
+
+                <div class="card">
+                    <img src="images 7.jfif" alt="Workout Playlist">
+                    <h3><p>Workout</p></h3> 
+                      <a href="Playlist.html" class="analyse-btn">
+                         18 Songs
+                      </a>  
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Section Analize Playlist -->
+        <section class="analyse-section">
+            <h2 id="analyse-titre">Analize Playlist la</h2>
+
+            <p id="analyse-text">
+                Dekouvri enfòmasyon sou playlist ou a, kantite mizik, estil mizikal yo,
+                ak lòt detay ki ka ede w pi byen òganize mizik ou yo.
+            </p>
+
+            <a href="Playlist.html" class="analyse-btn">
+                Analize Playlist la
+            </a>
+        </section>
+
+    </main>
+
+
+     <section class="counter-section">
+        <div class="start">
+
+            <div class="kard">
+                <div class="number">
+                    <span class="purecounter"
+                    data-purecounter-start="0"
+                    data-purecounter-end="100"
+                    data-purecounter-duration="3">
+                    </span>+
+                </div>
+                <p>Abone</p>
+            </div>
+
+            <div class="kard">
+                <div class="number">
+                    <span class="purecounter"
+                    data-purecounter-start="0"
+                    data-purecounter-end="95"
+                    data-purecounter-duration="3">
+                    </span>%
+                </div>
+                <p>Satisfaksyon</p>
+            </div>
+
+            <div class="kard">
+                <div class="number">
+                    <span class="purecounter"
+                    data-purecounter-start="0"
+                    data-purecounter-end="70"
+                    data-purecounter-duration="3">
+                    </span>+
+                </div>
+                <p>Tit</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- QUESTIONS SUPLEMANtÈ -->
+<section class="questions">
+
+    <h2>Questions supplémentaires</h2>
+
+    <p class="entrodiksyon">
+        Men kèk kesyon moun poze pi souvan sou Music Platfom.
+    </p>
+
+    <div class="faq">
+
+        <button class="kesyon" type="button">
+            Kisa Music Platfom ye?
+            <span class="siy">+</span>
+        </button>
+
+        <div class="repons">
+            Music Platfom se yon espas mizik ki ede moun
+            pi byen konprann mizik ak wòl li.
+        </div>
+
+    </div>
+
+
+    <div class="faq">
+
+        <button class="kesyon" type="button">
+            Ki sa kontni Music Platfom ofri?
+            <span class="siy">+</span>
+        </button>
+
+        <div class="repons">
+            Music Platfom se yon espas ki pataje mizik ki nan
+            tout domèn. Nou ekri ak pwodui mizik pou gwoup ak atis.
+        </div>
+
+    </div>
+
+
+    <div class="faq">
+
+        <button class="kesyon" type="button">
+            Èske m bezwen gen yon lide nan mizik deja?
+            <span class="siy">+</span>
+        </button>
+
+        <div class="repons">
+            Non. Music Platfom la pou akonpaye w.
+            Tout ekip nou an disponib pou ou 7/7.
+        </div>
+
+    </div>
+
+
+    <div class="faq">
+
+        <button class="kesyon" type="button">
+            Kijan m ka enskri?
+            <span class="siy">+</span>
+        </button>
+
+        <div class="repons">
+            Ou dwe ranpli fòmilè a oswa ou klike sou
+            bouton WhatsApp la. W ap jwenn yon moun ki ka ede w.
+        </div>
+
+    </div>
+
+</section>
+
+   <footer> 
+   <section class="byenvini-section"> <p> 
+        <span id="footer-contact">Kontak:</span> powermusic@gmail.com<br> 
+        <span id="footer-text">@PowerMusic - Platfòm pou w tande pi bon mizik yo</span> </p> <hr>
+    <div class="footer-main">
+
+        <div>
+            <a href="index.html" class="footer">
+                Site Mizk la
+            </a>
+
+            <p>
+                Aprann. Prodwi. Anmize n.
+            </p>
+        </div>
+
+        <div class="footer-links">
+            <a href="index.html">A propos</a>
+            <a href="top hits.html">Production</a>
+            <a href="kontak.html">Enskripsyon</a>
+            <a href="kontak.html">Kontak</a>
+        </div>
+
+    </div>
+    
+    </section> 
+
+</footer>
+
+    <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+
+ <!-- PureCounter -->
+    <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs@1.5.0/dist/purecounter_vanilla.min.js"></script> 
+
+    <script> 
+        new PureCounter(); 
+    </script> 
+
+
+   <button id="whatsapp" title="Contactez-nous sur whatsapp">
+    <i class="fa-brands fa-whatsapp"></i>
+   </button>
+    <script src="script.js"></script>
+
+</body>
+</html>
